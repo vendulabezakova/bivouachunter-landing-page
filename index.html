@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BivouacHunter — Najdi své místo</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">bivouac<span>hunter</span></div>
+  <div class="nav-links">
+    <a href="#features">Funkce</a>
+    <a href="#how">Jak to funguje</a>
+    <a href="#safety">Bezpečnost</a>
+    <a href="#download">Stáhnout</a>
+  </div>
+  <a href="#download" style="text-decoration:none;">
+    <button class="btn-nav">Stáhnout appku</button></a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <div class="hero-badge">Dostupné v App Store a Google Play</div>
+    <h1 class="hero-title">
+      Najdi své místo<br>
+      <em>pod hvězdami.</em>
+    </h1>
+    <p class="hero-sub">
+      BivouacHunter automaticky generuje potenciální místa na spaní
+      z terénních dat. Místa se generují vždy znovu podle tvého filtru
+      — jsou unikátní pro tebe, ne sdílená s komunitou.
+    </p>
+    <div class="hero-cta">
+      <a href="#download" style="text-decoration:none;">
+        <button class="btn-primary">⬇ Stáhnout zdarma</button>
+      </a>
+      <a href="#how" style="text-decoration:none;">
+      <button class="btn-secondary">Jak to funguje →</button>
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="s-num">100%</span>
+        <span class="s-label">automatické spoty</span>
+      </div>
+      <div class="stat-item">
+        <span class="s-num" style="font-size:.95rem;letter-spacing:.1em">🇨🇿🇸🇰🇦🇹🇵🇱🇩🇪</span>
+        <span class="s-label">dostupné oblasti</span>
+      </div>
+      <div class="stat-item">
+        <span class="s-num">offline</span>
+        <span class="s-label">funguje bez signálu</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-phone">
+    <div class="phone-glow"></div>
+    <div class="phone-frame">
+      <div class="phone-notch"></div>
+      <div class="phone-screen">
+        <div class="phone-map">
+          <div class="hblob g1"></div>
+          <div class="hblob g2"></div>
+          <div class="hblob g3"></div>
+          <div class="hblob y1"></div>
+          <div class="hblob y2"></div>
+          <div class="phone-pin"></div>
+        </div>
+        <div class="phone-ui">
+          <div class="phone-filter-label">AKTIVNÍ FILTR</div>
+          <div class="phone-chips">
+            <span class="phone-chip active">do 150m od pěšiny</span>
+            <span class="phone-chip active">sklon &lt;8°</span>
+            <span class="phone-chip active">pramen</span>
+            <span class="phone-chip inactive">přístřešek</span>
+            <span class="phone-chip inactive">orientace</span>
+            <span class="phone-chip inactive">terén</span>
+          </div>
+        </div>
+        <div class="phone-bottom-nav">
+          <div class="pbn-item active"><span class="pbn-icon">🗺</span>Mapa</div>
+          <div class="pbn-item"><span class="pbn-icon">♡</span>Uložené</div>
+          <div class="pbn-item"><span class="pbn-icon">☁</span>Počasí</div>
+          <div class="pbn-item"><span class="pbn-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="4.5" r="2.5"/><path d="M2 13c0-2.76 2.24-5 5-5s5 2.24 5 5"/></svg></span>Profil</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+  <div class="section-label-top">Funkce</div>
+  <h2 class="section-title">Vše, co potřebuješ<br>v terénu</h2>
+  <p class="section-sub">Navrženo pro sólo turisty, kteří chtějí spát tam, kde nikdo jiný není — ne tam, kde to bylo populární minulý víkend.</p>
+
+  <div class="features-grid">
+    <div class="feature-card">
+      <span class="f-icon">🌡</span>
+      <div class="f-title">Automatické spoty z terénu</div>
+      <div class="f-desc">Lidarová data + OpenStreetMap na známém podkladu Mapy.com. Žádné ruční přidávání. Appka najde rovné plochy 3×3 m v okolí sama.</div>
+    </div>
+    <div class="feature-card">
+      <span class="f-icon">🔥</span>
+      <div class="f-title">Heatmapa míst</div>
+      <div class="f-desc">Zelená = ideální, oranžová = kompromis. Skóre kombinuje terén, vzdálenost od pěšiny a data o pohybu lidí — takže vidíš nejen to, kde se dá spát, ale kde tě nikdo nebude rušit.</div>
+    </div>
+    <div class="feature-card">
+      <span class="f-icon">🎛</span>
+      <div class="f-title">Tvůj filtr, tvá pravidla</div>
+      <div class="f-desc">Vzdálenost od pěšiny, sklon, orientace, přístřešek, pramen. Appka si pamatuje tvé nastavení.</div>
+    </div>
+    <div class="feature-card">
+      <span class="f-icon">☁️</span>
+      <div class="f-title">Počasí pro každý spot</div>
+      <div class="f-desc">Klepni na místo a uvidíš předpověď. Vítr, srážky, teplota — přímo pro dané souřadnice.</div>
+    </div>
+    <div class="feature-card">
+      <span class="f-icon">📡</span>
+      <div class="f-title">Offline režim</div>
+      <div class="f-desc">Stáhni oblast doma. V lese bez signálu máš mapu, spoty i GPS.</div>
+    </div>
+    <div class="feature-card">
+      <span class="f-icon">🛡</span>
+      <div class="f-title">Záchranná čísla u každého spotu</div>
+      <div class="f-desc">Nejbližší stanice Horské služby vždy po ruce. Jedno klepnutí, okamžité volání.</div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="how-inner">
+    <div class="section-label-top">Jak to funguje</div>
+    <h2 class="section-title">Od gauče k bivaku<br>za čtyři kroky</h2>
+    <div class="steps-grid">
+      <div class="step-item">
+        <div class="step-num">01</div>
+        <div class="step-title">Nastav filtr</div>
+        <div class="step-desc">Řekni appce, kde chceš spát — jak daleko od cesty, jestli chceš vodu nebo přístřešek v dochozí vzdálenosti.</div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">02</div>
+        <div class="step-title">Prozkoumej heatmapu</div>
+        <div class="step-desc">Zelené oblasti = potenciální místa na spaní. Klepni pro detail a počasí.</div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">03</div>
+        <div class="step-title">Stáhni oblast offline</div>
+        <div class="step-desc">Před výletem stáhni mapu a spoty pro případ, že budeš bez signálu.</div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">04</div>
+        <div class="step-title">Spi v klidu</div>
+        <div class="step-desc">Appka zná nejbližší Horskou službu a umí dokumentovat nouzovou situaci.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SAFETY -->
+<section class="safety" id="safety">
+  <div class="safety-visual">
+    <div class="sv-row">
+      <span class="sv-icon">⌚</span>
+      <div>
+        <div class="sv-label">Nouzový signál z hodinek</div>
+        <div class="sv-sub">Jedno gesto — GPS, počasí a terén letí kontaktu</div>
+      </div>
+      <span class="sv-badge ok">SOS</span>
+    </div>
+    <div class="sv-row">
+      <span class="sv-icon">📍</span>
+      <div>
+        <div class="sv-label">Horská služba ČR</div>
+        <div class="sv-sub">Nejbližší stanice — 4,2 km · Krkonoše</div>
+      </div>
+      <span class="sv-badge ok">1210</span>
+    </div>
+    <div class="sv-row">
+      <span class="sv-icon">⚠️</span>
+      <div>
+        <div class="sv-label">KRNAP — chráněné území</div>
+        <div class="sv-sub">Bivakování omezeno — zobrazit podmínky</div>
+      </div>
+      <span class="sv-badge warn">Info</span>
+    </div>
+    <div class="sv-row">
+      <span class="sv-icon">📸</span>
+      <div>
+        <div class="sv-label">Dokumentuj situaci</div>
+        <div class="sv-sub">Uloží GPS + počasí + časové razítko offline</div>
+      </div>
+      <span class="sv-badge ok">Aktivní</span>
+    </div>
+    <div class="sv-row">
+      <span class="sv-icon">🔗</span>
+      <div>
+        <div class="sv-label">Sdílení polohy</div>
+        <div class="sv-sub">Live poloha pro důvěryhodnou osobu</div>
+      </div>
+      <span class="sv-badge ok">Zapnuto</span>
+    </div>
+  </div>
+
+  <div>
+    <div class="section-label-top">Bezpečnost</div>
+    <h2 class="section-title">Navrženo pro<br>sólo turisty</h2>
+    <ul class="safety-list">
+      <li>Nouzový signál z hodinek jedním gestem — pošle GPS polohu, počasí a terén tvému kontaktu. Garmin inReach funguje i bez signálu přes satelit, Apple Watch přes Emergency SOS.</li>
+      <li>Nejbližší stanice Horské služby u každého spotu — číslo dostupné offline.</li>
+      <li>Informace o zakázaných zónách s praktickým návodem co dělat.</li>
+      <li>Dokumentace nouzové situace jedním klepnutím — GPS, počasí, čas.</li>
+      <li>Live poloha na pozadí — zapneš, jen když chceš. Pokud se nevrátíš, důvěryhodná osoba ví, kde tě hledat. Bez nutnosti třetí aplikace.</li>
+      <li>Odlehlost jako klíčový parametr — místa kde tě nikdo nenajde pokud nechceš.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="testimonials-inner">
+    <div class="section-label-top">Co říkají uživatelé</div>
+    <h2 class="section-title" style="margin-bottom:3rem;">Skutečné bivaky,<br><em style="font-family:var(--display);font-style:italic;color:var(--emerald)">skutečné zážitky</em></h2>
+
+    <div class="t-slider">
+      <div class="t-track" id="t-track">
+
+        <div class="t-slide">
+          <div class="t-quote-mark">“</div>
+          <p class="t-text">Konečně appka, která neřeší, kde všichni ostatní spali. Vygenerovala mi místo ve svahu nad údolím — byl tam výhled na hvězdy a nula lidí. Takhle si solo turistiku představuju.</p>
+          <div class="t-author">
+            <div class="t-avatar"><img src="avatars/tereza.jpg" alt="Tereza K." onerror="this.parentNode.innerHTML='TK'"></div>
+            <div>
+              <div class="t-name">Tereza K.</div>
+              <div class="t-meta">solo turistka · Beskydy</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-slide">
+          <div class="t-quote-mark">"</div>
+          <p class="t-text">Offline režim mě zachránil v Nízkých Tatrách. Žádný signál, ale mapa fungovala, spot byl stažený — spal jsem v suchu zatímco ostatní táboráci hledali místo za tmy.</p>
+          <div class="t-author">
+            <div class="t-avatar"><img src="avatars/martin.jpg" alt="Martin R." onerror="this.parentNode.innerHTML='MR'"></div>
+            <div>
+              <div class="t-name">Martin R.</div>
+              <div class="t-meta">ultra trail běžec · Slovensko</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-slide">
+          <div class="t-quote-mark">"</div>
+          <p class="t-text">Sdílení polohy s kamarádkou mi dalo klid. Věděla kde jsem, já věděla, že někdo ví. Nic víc nepotřebuješ, když jdeš sama na tři dny do lesa.</p>
+          <div class="t-author">
+            <div class="t-avatar"><img src="avatars/jana.jpg" alt="Jana M." onerror="this.parentNode.innerHTML='JM'"></div>
+            <div>
+              <div class="t-name">Jana M.</div>
+              <div class="t-meta">solo turistka · Šumava</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="t-dots">
+      <button class="t-dot active" onclick="goTo(0)"></button>
+      <button class="t-dot" onclick="goTo(1)"></button>
+      <button class="t-dot" onclick="goTo(2)"></button>
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOAD -->
+<section class="download" id="download">
+  <div class="download-inner">
+    <div class="section-label-top">Stáhnout</div>
+    <h2>Připraveni na<br><em style="font-family:var(--display);font-style:italic;color:var(--emerald)">další bivak?</em></h2>
+    <p>BivouacHunter je zdarma. Bez reklam. Bez prodeje dat. Jen appka, která ti pomůže najít místo na spaní.</p>
+
+    <div class="store-btns">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:1rem;">
+        <div class="store-btn">
+          <span class="store-icon">🍎</span>
+          <div class="store-text">
+            <div class="st-sub">Stáhnout z</div>
+            <div class="st-name">App Store</div>
+          </div>
+        </div>
+        <div class="qr-box" id="qr-box-ios"></div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:1rem;">
+        <div class="store-btn">
+          <span class="store-icon">▶</span>
+          <div class="store-text">
+            <div class="st-sub">Stáhnout z</div>
+            <div class="st-name">Google Play</div>
+          </div>
+        </div>
+        <div class="qr-box" id="qr-box-android"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">bivouac<span>hunter</span></div>
+  <div class="footer-links">
+    <a href="https://github.com/vendulabezakova/bivouachunter/tree/main">O projektu</a>
+    <a href="#">Ochrana soukromí</a>
+    <a href="#">Kontakt</a>
+  </div>
+  <div class="footer-copy">© 2026 BivouacHunter · Vendula Bezáková</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
