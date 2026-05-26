@@ -471,4 +471,5 @@
     .safety { grid-template-columns: 1fr; padding: 4rem 1.5rem; }
     .download { padding: 4rem 1.5rem; }
     footer { padding: 2rem 1.5rem; flex-direction: column; text-align: center; }
+    .footer-links { position: static; transform: none; justify-content: center; }
   }
